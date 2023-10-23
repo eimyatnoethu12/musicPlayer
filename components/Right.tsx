@@ -18,7 +18,7 @@ const SentToRightBody =(data:any)=>{
     <div className='pt-12 pl-14'>
       <div><RightHeading passData={SentToRightBody}/></div>
       <br/><br/>
-      <div><RightBody valueData={sendData}/></div>
+      <div><RightBody /></div>
       <br/>
       <div><Recently /></div>
     </div>
