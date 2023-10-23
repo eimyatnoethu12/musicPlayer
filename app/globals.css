@@ -2,26 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+ :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: rgb(211, 15, 48);
+  --background-end-rgb: rgb(145, 8, 90);
 }
+
+/* 213, 39, 60 */
+/* 179, 7, 56 */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb:rgb(0, 0, 0);
+    --background-start-rgb: rgb(145, 8, 90);
+    --background-end-rgb: rgb(145, 8, 90);
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground-rgb);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(136, 2, 54),
+    rgb(214, 29, 134)
+  );
+  
+} 
+
+.small{
+  font-size:9px;
 }
+.small1{
+  font-size:8px;
+}
+.small2{
+  font-size: 13px;
+}
+
+
+/* right side heading */
+
+.input-container {
+  position: relative;
+  /* overflow: hidden; */
+  width:0.1%;
+  transition:width 0.4s;
+}
+
+.sample{
+   width:50%;
+   transition:width 0.8s;
+}
+.sample1{
+  width:0px;
+  opacity:0;
+  transition:0.8s;
+}
+
+.appear:hover .appear1{
+  z-index:10;
+}
+.appear:hover{
+  background:rgba(128, 128, 128, 0.346);
+}
+
+.appear2:hover .appear3{
+  display:inline;
+}
+
+.pink:hover {
+  box-shadow: 0px 10px 80px rgb(212, 32, 158); 
+}
+
+.blue:hover {
+  box-shadow: 0px 10px 80px rgb(32, 50, 212); 
+}
+
+
+
