@@ -24,18 +24,18 @@ const Heading = () => {
       </div>
       <br/>
       {/* Profile */}
-        <div className='flex gap-4 cursor-pointer' onClick={appearDiv}>
+        <div className='flex gap-4 cursor-pointer -ml-7' onClick={appearDiv}>
         <Image src={'/profile.jpg'} width={100} height={100} alt='profile' className='w-10 h-10 rounded-full'/>
-         <div className='flex gap-1'>
+         <div className='flex gap-1 -ml-3 lg:m-0 '>
           <div className='flex flex-col relative'>
-            <span className='font-bold'>Joshua</span>
+            <span className='font-bold text-xs sm:text-lg'>Joshua</span>
             <span className='text-slate-300 border
             font-bold absolute bottom-1
             border-slate-300 
              cursor-pointer
             small'>PREMIUM</span>
             </div>
-          <FontAwesomeIcon icon={faAngleDown} className='w-2.5 absolute -right-5 bottom-5 cursor-pointer'/>
+          <FontAwesomeIcon icon={faAngleDown} className='w-2.5 absolute -right-5 bottom-5 cursor-pointer lg:m-0 -ml-10'/>
            </div>
         {/* </div> */}
       </div>

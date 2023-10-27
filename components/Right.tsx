@@ -16,11 +16,11 @@ const SentToRightBody =(data:any)=>{
 
   return (
     <div className='pt-12 pl-14'>
-      <div><RightHeading passData={SentToRightBody}/></div>
+      <div className='sm:m-0 ml-4'><RightHeading passData={SentToRightBody}/></div>
       <br/><br/>
-      <div><RightBody /></div>
+      <div className='sm:m-0 ml-6'><RightBody /></div>
       <br/>
-      <div><Recently /></div>
+      <div className='sm:m-0 ml-4'><Recently /></div>
     </div>
   )
 }

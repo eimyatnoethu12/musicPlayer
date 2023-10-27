@@ -23,10 +23,10 @@ const RightHeading = ({passData}:Props) => {
     
     <div className='m-1'>
     {/* Search */}
-   <div className='flex relative'>
+   <div className='flex relative sm:m-0 -ml-1 -mt-2  lg:w-3/6 sm:w-4/6 w-3/4'>
    <div>
     {isvisible==false &&
-  <FontAwesomeIcon icon={faMagnifyingGlass} className='text-lg cursor-pointer'
+  <FontAwesomeIcon icon={faMagnifyingGlass} className='text-lg cursor-pointer sm:m-0 -ml-1'
    onClick={()=>setIsvisible(!isvisible)} />}
     </div>
    
@@ -36,16 +36,17 @@ const RightHeading = ({passData}:Props) => {
    value={inputValue}
    onChange={handleInputChange}
    onClick={()=>setIsvisible(!isvisible)}
-   className='border-slate-300 rounded-lg text-sm
-   tracking-wide border-2 p-1 z-10  outline-none w-full absolute -top-2 -left-4
+   className='border-slate-300 rounded-lg sm:text-sm text-xs
+   tracking-wide border-2 p-1 z-10 text-center  outline-none w-full absolute -top-1 left-2 sm:-left-2
    '
-   placeholder="     Search for songs, artists, albums"
+   placeholder="Search for songs, artists, albums"
  />
     </div>
+
     <div className=' opacity-0'>.</div>
    </div>
    {/* Noti */}
- <div className='absolute right-14 top-10 cursor-pointer' onClick={()=>setAppear(!appear)}>
+ <div className='absolute right-9 top-10  sm:right-14 cursor-pointer' onClick={()=>setAppear(!appear)}>
  <div className='text-lg text-gray-900'>
  <FontAwesomeIcon icon={faBell} className='text-xl' />
  <div className='bg-red-500 text-xs w-4 h-4 m-0 p-1 absolute -top-1 -right-2 text-white rounded-full'>

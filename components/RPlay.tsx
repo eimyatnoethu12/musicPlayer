@@ -39,15 +39,15 @@ const RPlay = () => {
      
         {randomAlbums.map((a:any)=>(
             <div className='flex flex-row gap-12 appear key={a.key}'>
-               <div className='grid grid-cols-5 gap-3 '>
-                <div  className='relative  text-black z-10  left-3 flex' >
+               <div className='grid grid-cols-6 gap-3 '>
+                <div  className='relative col-span-2 text-black z-10  left-3 flex ' >
                     {a.strAlbumThumb ? (
                  <div className='relative -top-3 right-1'>
-                    <FontAwesomeIcon icon={faCirclePlay} className='top-7 left-2  text-white z-10 relative appear1'/>
+                    <FontAwesomeIcon icon={faCirclePlay} className='top-7 left-2  text-white z-10 relative appear1 '/>
                    <img
                   src={a.strAlbumThumb}
                   alt={`Album Cover for ${a.strAlbum}`}
-                  width="32" className='border w-8 h-8 rounded '
+                  width="32" className='border w-full h-8 rounded '
                 />
                   </div>
                
@@ -55,11 +55,11 @@ const RPlay = () => {
               <FontAwesomeIcon icon={faCirclePlay} className='top-7 left-2  text-white z-10 relative appear1'/>
               <div className='border bg-gray-800 opacity-40 w-8 h-8 rounded '></div>
                     </div>)}
-                    <div className=' relative top-3 text-gray-700 small1 w-6/12  font-bold '>{a.strAlbum}</div>
+                    <div className=' relative top-3 text-gray-700 small1 w-6/12  font-bold  '>{a.strAlbum}</div>
                   </div>
     
-            <div className='text-gray-700 relative top-5 text-xs font-bold opacity-25'>{a.strArtist}</div>
-            <div className='text-gray-700 relative top-5 text-xs font-bold opacity-25 ml-10'>13:30</div>
+            <div className='text-gray-700 relative top-5 sm:text-xs small font-bold opacity-25 ml-7 -mt-4 '>{a.strArtist}</div>
+            <div className='text-gray-700 relative top-5 sm:text-xs small font-bold opacity-25 ml-10 '>13:30</div>
           <div>
           <FontAwesomeIcon icon={faHeart} className='text-gray-700 relative top-5 text-xs font-bold opacity-25 ml-10'/>
           </div>

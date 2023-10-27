@@ -5,15 +5,17 @@ import PlayList from './PlayList'
 
 const Left = () => {
   return (
-    <div className='bg-slate-100  rounded-bl-3xl flex flex-col items-start'>
+    <div className='bg-slate-100  rounded-bl-3xl flex flex-col items-start 
+    md:relative
+    fixed'>
        {/* Heading for left Side */}
-       <div><Heading/></div>  
+       <div className='-mr-14 sm:m-0'><Heading/></div>  
         <br/>
        {/* Browse Part of the Left Side */}
-       <div><BrowserPart/></div>
+       <div className='sm:m-0 -mr-14 '><BrowserPart/></div>
        <br/>
        {/* PlayList Part of the Left Side */}
-       <div><PlayList/></div>
+       <div className='sm:m-0 -mr-14 '><PlayList/></div>
     </div>
   )
 }

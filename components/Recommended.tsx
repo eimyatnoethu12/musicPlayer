@@ -41,12 +41,14 @@ const Recommended = () => {
     // Recommended PlayList
   <>
    {data.length > 0 ? (
-     <div className='grid grid-cols-3 cursor-pointer gap-4'>
+     <div className='grid grid-cols-3 cursor-pointer gap-4 mr-5'>
         
           {randomAlbums.map((album:any) => (
             <div className='appear2' key={album.idAlbum} >
                 <div className='relative'>
-                <FontAwesomeIcon icon={faCirclePlay} className='text-6xl absolute top-14 appear3 hidden  z-10 left-12 text-white'/></div>
+                <FontAwesomeIcon icon={faCirclePlay} className='lg:text-6xl 
+                md:text-3xl text-xl sm:top-12 sm:left-10 md:left-6 md:top-7 lg:top-10 lg:left-10
+                absolute top-7 appear3 hidden  z-10 left-7 text-white'/></div>
                 {album.strAlbumThumb ? (
                   <>
                    <img
@@ -58,6 +60,7 @@ const Recommended = () => {
                   </>
                
               ):(<div className='relative '>
+                {/* play icon */}
               <FontAwesomeIcon icon={faCirclePlay} className='text-6xl absolute top-10 appear3 hidden  z-10 left-9 text-white'/>
               <div className='w-36 h-36 rounded-lg border bg-slate-600 opacity-40'></div>
            </div>)}

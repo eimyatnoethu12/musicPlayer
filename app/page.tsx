@@ -9,11 +9,11 @@ export default function Home() {
       {/* items-center */}
      <div className='grid grid-cols-5 shadow-2xl
      rounded-b-3xl  bg-white '>
-       <div className='col-span-1'><Left/></div>
-       <div className='col-span-4'><Right/></div>
+       <div className='col-span-1 md:-m-1'><Left/></div>
+       <div className='col-span-4  '><Right/></div>
       </div>
       <div className='grid grid-cols-5'>
-      <div className='col-span-5'><Song/></div>
+      {/* <div className='col-span-5'><Song/></div> */}
       </div>
     </main>
   )
