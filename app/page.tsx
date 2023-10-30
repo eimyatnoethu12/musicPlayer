@@ -13,7 +13,7 @@ export default function Home() {
        <div className='col-span-4  '><Right/></div>
       </div>
       <div className='grid grid-cols-5'>
-      {/* <div className='col-span-5'><Song/></div> */}
+      <div className='col-span-5 hidden lg:block'><Song/></div>
       </div>
     </main>
   )

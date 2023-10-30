@@ -15,7 +15,7 @@ const Recently = () => {
             </div>
         </div>
         <div>
-        <div className='font-bold text-gray-600 mt-8'>Recommended For you</div>
+        <div className='font-bold text-gray-600 mt-8 md:m-0'>Recommended For you</div>
         <br/>
         <div><Recommended/></div>
         </div>

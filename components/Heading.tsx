@@ -15,7 +15,7 @@ const Heading = () => {
     // Heading for Left Side
     <div className='flex flex-col ml-7 relative'>
       {/* Left Icon */}
-      <div className='flex mt-5
+      <div className='flex mt-5 md:ml-0
         gap-2  justify-start -ml-4
         '>
         <div className='bg-red-500  w-4 h-4 rounded-full'></div>
@@ -24,7 +24,7 @@ const Heading = () => {
       </div>
       <br/>
       {/* Profile */}
-        <div className='flex gap-4 cursor-pointer -ml-7' onClick={appearDiv}>
+        <div className='flex gap-4 cursor-pointer md:ml-0 -ml-7' onClick={appearDiv}>
         <Image src={'/profile.jpg'} width={100} height={100} alt='profile' className='w-10 h-10 rounded-full'/>
          <div className='flex gap-1 -ml-3 lg:m-0 '>
           <div className='flex flex-col relative'>
